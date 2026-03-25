@@ -4,7 +4,7 @@ function App() {
   const [msg, setMsg] = useState<string>("");
 
   useEffect(() => {
-    fetch("http://localhost:3000")
+    fetch("https://hello-deploy-backend.onrender.com/")
       .then((res) => res.json())
       .then((data) => setMsg(data.message));
   }, []);
